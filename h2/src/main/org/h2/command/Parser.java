@@ -2410,7 +2410,7 @@ public class Parser {
                 read();
                 read(JOIN);
                 join = readTableFilter();
-                top = readJoin(top);
+                join = readJoin(join);
                 Expression on = readJoinSpecification(top, join, false);
                 addJoin(top, join, false, on);
                 break;
@@ -2418,7 +2418,7 @@ public class Parser {
             case JOIN: {
                 read();
                 join = readTableFilter();
-                top = readJoin(top);
+                join = readJoin(join);
                 Expression on = readJoinSpecification(top, join, false);
                 addJoin(top, join, false, on);
                 break;

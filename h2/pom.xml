@@ -2,9 +2,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.h2database</groupId>
-  <artifactId>h2</artifactId>
-  <version>1.4.201-SNAPSHOT</version>
+  <groupId>com.e1c.com.h2database</groupId>
+  <artifactId>h2-1c</artifactId>
+  <version>1.4.200</version>
   <packaging>jar</packaging>
   <name>H2 Database Engine</name>
   <url>https://h2database.com</url>
@@ -304,5 +304,16 @@
     </plugins>
   </build>
 
-
+  <distributionManagement>
+    <repository>
+      <id>artifactory-g5-commons</id>
+      <name>G5 Runtime Types Repo</name>
+      <url>http://boreas.dept07/artifactory/g5-commons</url>
+    </repository>
+    <snapshotRepository>
+      <id>artifactory-g5-commons</id>
+      <name>G5 Runtime Types Repo</name>
+      <url>http://boreas.dept07/artifactory/g5-commons</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
